@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.activities.ActivityLogin"
+    android:background="@drawable/shape_back_login">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+        <LinearLayout
+            android:id="@+id/form_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/al_area_sp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingTop="15dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="30dp">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/app_name"
+                    app:srcCompat="@drawable/vector_mycp"/>
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_name_together"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    android:layout_gravity="center"
+                    android:textSize="24sp"
+                    fontPath="fonts/Myriad-Pro-Semibold_31650.ttf"/>
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/slogan"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    android:layout_gravity="center"
+                    android:textSize="25sp"
+                    fontPath="fonts/Myriad-Pro-Semibold_31650.ttf"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:orientation="vertical">
+                    <hds.aplications.com.mycp.view.components.TextInputLayoutComponent
+                        android:id="@+id/edit_text_user_l"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@color/hint_loging"
+                        app:hintTextAppearance="@style/input_layout_appearance_loging"
+                        android:layout_marginTop="5dp">
+                        <android.support.v7.widget.AppCompatEditText
+                            android:id="@+id/edit_text_user"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            style="@style/edit_text_login"
+                            android:hint="@string/hint_user"
+                            android:lines="1"
+                            android:text="ruth-meier-17@catv.rol.ch"
+                            android:maxLines="1"
+                            android:drawableRight="@drawable/container_vector_user"
+                            android:drawableEnd="@drawable/container_vector_user"/>
+                    </hds.aplications.com.mycp.view.components.TextInputLayoutComponent>
+
+                    <hds.aplications.com.mycp.view.components.TextInputLayoutComponent
+                        android:id="@+id/edit_text_user_pass_l"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@color/hint_loging"
+                        app:hintTextAppearance="@style/input_layout_appearance_loging"
+                        android:layout_marginTop="5dp">
+                        <android.support.v7.widget.AppCompatEditText
+                            android:id="@+id/edit_text_user_pass"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            style="@style/edit_text_login"
+                            android:hint="@string/hint_pass"
+                            android:inputType="textPassword"
+                            android:lines="1"
+                            android:maxLines="1"
+                            android:drawableRight="@drawable/container_vector_pass"
+                            android:drawableEnd="@drawable/container_vector_pass"/>
+                    </hds.aplications.com.mycp.view.components.TextInputLayoutComponent>
+
+                    <!--<LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/shape_edit_text_home"
+                        android:orientation="horizontal">
+                        <android.support.v7.widget.AppCompatEditText
+                            android:layout_width="1dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/hint_user"
+
+                            android:layout_marginTop="1dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginBottom="1dp"
+                            android:maxLines="1"
+                            android:background="#af357695"
+                            android:padding="15dp"
+                            android:textColor="@android:color/white"
+                            android:textColorHint="@color/hint_loging"
+                            android:theme="@style/EditTheme"/>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="1dp"
+                            android:layout_marginRight="1dp"
+                            android:layout_marginBottom="1dp"
+                            android:paddingRight="10dp"
+                            android:paddingLeft="10dp"
+                            android:background="#357695"
+                            app:srcCompat="@drawable/vector_pass"/>
+                    </LinearLayout>-->
+
+                    <CheckBox
+                        android:id="@+id/remember_pass"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/white"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="-4dp"
+                        android:textSize="@dimen/checkbox_text"
+                        android:button="@drawable/selector_check_box"
+                        android:checked="true"
+                        android:text="@string/remember_pass"
+                        android:visibility="gone"/>
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/btn_input"
+                        android:id="@+id/al_button_my_home"
+                        android:gravity="center"
+                        android:background="@drawable/selector_btn_green"
+                        android:textColor="#ffffff"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:onClick="actionLogin"/>
+                    <TextView android:id="@+id/link_signup"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#ffffff"
+                        android:layout_marginBottom="20dp"
+                        android:text="@string/create_account_link"
+                        android:gravity="center"
+                        android:textSize="20dip"
+                        android:clickable="true"
+                        android:onClick="onClickRegister"/>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

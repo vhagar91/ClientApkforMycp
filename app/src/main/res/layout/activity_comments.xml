@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="hds.aplications.com.mycp.view.activities.CommentsActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_bar_height"
+        android:fitsSystemWindows="true"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            android:background="@color/bar_background"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:layout_marginBottom="50dp"
+
+                android:background="@drawable/shape_back_favorite">
+                <ImageView
+                    android:id="@+id/image_remote"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/app_name"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:background="@drawable/shape_back_start"
+                    android:paddingBottom="20dp">
+                    <ImageView
+                        android:id="@+id/inmediate_booking"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/vector_marker_cohete"
+                        android:contentDescription="@string/app_name"/>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:paddingTop="4dp">
+                        <com.richpath.RichPathView
+                            android:id="@+id/star_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_start"
+                            android:layout_marginStart="@dimen/margin_start"
+                            app:vector="@drawable/vector_start_ok"/>
+
+                        <com.richpath.RichPathView
+                            android:id="@+id/star_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_start"
+                            android:layout_marginStart="@dimen/margin_start"
+                            app:vector="@drawable/vector_start_ok"/>
+                        <com.richpath.RichPathView
+                            android:id="@+id/star_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_start"
+                            android:layout_marginStart="@dimen/margin_start"
+                            app:vector="@drawable/vector_start_ok"/>
+                        <com.richpath.RichPathView
+                            android:id="@+id/star_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_start"
+                            android:layout_marginStart="@dimen/margin_start"
+                            app:vector="@drawable/vector_start_ok"/>
+                        <com.richpath.RichPathView
+                            android:id="@+id/star_5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_start"
+                            android:layout_marginStart="@dimen/margin_start"
+                            app:vector="@drawable/vector_start_ok"/>
+                    </LinearLayout>
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_margin="@dimen/fab_margin"
+        app:layout_anchor="@id/app_bar"
+        app:layout_anchorGravity="bottom|end"
+        android:background="@drawable/selector_btn_green"
+        app:srcCompat="@drawable/vector_bubbles" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/rich_view_comments"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context="hds.aplications.com.mycp.view.activities.CommentsActivity"
+        tools:showIn="@layout/activity_comments">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:paddingTop="7dp"
+            tools:listitem="@layout/fragment_comment" />
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

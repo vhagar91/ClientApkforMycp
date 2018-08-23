@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="errorText">#e9322d</color>
+    <color name="infoText">#3a87ad</color>
+    <color name="successText">#46a546</color>
+    <color name="warningText">#c67605</color>
+
+    <color name="calendar_day_no_current_month">#ffd7d9db</color>
+    <color name="calendar_text_today">#030101</color>
+    <color name="calendar_transparent">#00ffffff</color>
+
+    <color name="load_mask_bg">#b9000000</color>
+    <color name="color_floating_button">#fd8701</color>
+    <color name="color_floating_bar">#fdfdfe</color>
+
+    <color name="color_btn_orange">#f89406</color>
+    <color name="color_btn_ico_orange">#de8000</color>
+
+    <color name="color_btn_blue">#013567</color>
+    <color name="color_btn_ico_blue">#022d5a</color>
+
+    <color name="color_btn_red">#d93701</color>
+    <color name="color_btn_ico_red">#b43601</color>
+
+    <color name="color_btn_green">#55a32f</color>
+    <color name="color_btn_ico_green">#4e942b</color>
+
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="rooms">
+        <item quantity="one">%d Room</item>
+        <item quantity="other">%d Rooms</item>
+    </plurals>
+    <plurals name="reservations">
+        <item quantity="one">%d Reservation</item>
+        <item quantity="other">%d Reservations</item>
+    </plurals>
+</resources>

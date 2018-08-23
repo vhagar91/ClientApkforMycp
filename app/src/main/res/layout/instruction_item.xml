@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/thirdLine"
+                android:elevation="10dp"
+                android:orientation="vertical"
+                android:descendantFocusability="blocksDescendants">
+
+    <ImageView
+        android:id="@+id/instruction_ico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/roundabout"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:layout_below="@id/instruction_ico">
+
+        <TextView
+            android:id="@+id/instruction_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:text="1"
+            android:textColor="@color/color_btn_blue"
+            style="@style/sub_sub_normal_title_card"/>
+        <TextView
+            android:id="@+id/instruction_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:textColor="@color/color_btn_blue"
+            android:text="Gire levemente a la izquierda en dragones"
+            style="@style/sub_sub_title_card"/>
+
+        <TextView
+
+            android:id="@+id/instruction_distance"
+            android:text="500.3 m"
+            android:textColor="@color/color_btn_blue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            style="@style/sub_sub_title_card"/>
+    </LinearLayout>
+
+</RelativeLayout>

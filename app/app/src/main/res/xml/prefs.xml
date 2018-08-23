@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:key="first_screen">
+    <PreferenceCategory android:title="@string/auth_preferences" />
+    <CheckBoxPreference
+        android:title="Testing"
+        android:key="automaticSync"
+        android:summaryOff="Testing is off"
+        android:summaryOn="Testing is on" />
+
+    <PreferenceScreen
+        android:key="second_screen"
+        android:title="Configuración">
+    </PreferenceScreen>
+
+</PreferenceScreen>

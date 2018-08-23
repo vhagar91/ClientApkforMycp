@@ -1,0 +1,13 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="@color/options_red"/>
+        </shape>
+    </item>
+
+    <!--<item android:bottom="@dimen/fab_padding" android:left="@dimen/fab_padding" android:top="@dimen/fab_padding" android:right="@dimen/fab_padding">
+        <shape android:shape="oval">
+            <solid android:color="@color/calendar_available"/>
+        </shape>
+    </item>-->
+</layer-list>

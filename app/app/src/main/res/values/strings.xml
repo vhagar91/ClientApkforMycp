@@ -1,0 +1,91 @@
+<resources>
+    <string name="app_name">MyCPLight</string>
+    <string name="title_activity_activity_initial">MyCPLight</string>
+
+    <string name="login_activity_username_label">Usuario</string>
+    <string name="login_activity_password_label">Contraseña</string>
+    <string name="login_activity_ok_button">Aceptar</string>
+    <string name="login_activity_newaccount_text">Crear nueva cuenta</string>
+    <string name="login_activity_loginfail_text_pwmissing">Introduzca la contraseña</string>
+    <string name="label">Etiqueta</string>
+    <string name="login_activity_loginfail_text_both">Credenciales erróneas</string>
+    <string name="login_activity_loginfail_text_pwonly">La contraseña no es correcta</string>
+    <string name="ui_activity_authenticating">Autenticando</string>
+    <string name="auth_preferences">Preferencias</string>
+    <string name="auth_checkbox_user_debug">Use debug server</string>
+    <string name="auth_summary_user_debug">Connecting to a debug server instead of prod server</string>
+    <string name="auth_sync_title">Sincronización</string>
+    <string name="auth_sync_summary_off">La sincronización está desactivada</string>
+    <string name="auth_sync_summary_on">La sincronización está activada</string>
+    <string name="sync_provider_title">Actualizar datos de las reservas</string>
+    <!-- -->
+    <string name="action_settings">Settings</string>
+    <string name="action_search">Search</string>
+    <string name="title_activity_welcome">Welcomes</string>
+    <string name="profile_name">Miguel</string>
+    <string name="btn_my_home">MYCASAPARTICULAR</string>
+    <string name="btn_availability">DISPONIBILIDAD</string>
+    <string name="btn_available">DISPONIBLE</string>
+    <string name="btn_no_available">NO DISPONIBLE</string>
+    <string name="image_log">Logo</string>
+    <string name="welcome_user">Bienvenido</string>
+    <string name="welcome_text_l1">Gestione fácilmente</string>
+    <string name="welcome_text_l2">la disponibilidad de sus</string>
+    <string name="welcome_text_l3">habitaciones</string>
+    <string name="welcome">¡Bienvenido!</string>
+    <string name="btn_input">INGRESAR</string>
+    <string name="btn_new_user">NUEVO USUARIO</string>
+    <string name="title_activity_activity_login">Login</string>
+    <string name="remember_pass">Recordar contraseña</string>
+    <string name="confirm_sms_action_exit">Desea salir</string>
+    <string name="acept_action_exit">Aceptar</string>
+    <string name="cancel_action_exit">Cancelar</string>
+    <string name="action_exit">Salir</string>
+    <string name="title_activity_activity_register">ActivityRegister</string>
+    <string name="hint_user">Usuario</string>
+    <string name="hint_pass">Contraseña</string>
+    <string name="register_free">¡Regístrate gratis!</string>
+    <string name="has_acount">¿Ya tienes una cuenta?</string>
+    <string name="hint_last_name">Apellidos</string>
+    <string name="hint_email">Correo</string>
+    <string name="title_activity_activity_edit_profile">ActivityEditProfile</string>
+    <string name="btn_my_save">Guardar</string>
+    <string name="label_name">Nombre:</string>
+    <string name="label_email">Email:</string>
+    <string name="full_name">Miguel Gómez León</string>
+    <string name="full_email">mgleonsc@gmail.com</string>
+    <string name="label_host">1. Anfitrión</string>
+    <string name="hint_host_first">Nombre</string>
+    <string name="hint_host_second">Segundo nombre</string>
+    <string name="hint_host_direction">Dirección</string>
+    <string name="dat_general">Datos generales</string>
+    <string name="title_activity_accommodation_details">AccommodationDetails</string>
+    <string name="btn_fetch_data">Buscar</string>
+    <string name="hint_accommodation_code">Código</string>
+    <string name="no_internet_connection">Verifique el estado de su conexión e intentelo nuevamente.</string>
+    <string name="info_alert_user">Por favor, introduzca su usuario y contraseña</string>
+    <string name="lbl_room">Habitación</string>
+    <string name="str_udetails_reason">Adicionada por el propietario desde la aplicación móvil</string>
+
+    <string name="title_activity_activity_availability">ActivityAvailability</string>
+    <string name="btn_send">ENVIAR</string>
+    <string name="loading_mask_text">Cargando...</string>
+    <string name="title_activity_activity_not_available">ActivityNotAvailable</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+
+    <string name="search_accommodation_data">Buscando datos de la propiedad</string>
+    <string name="login_user">Autenticando usuario</string>
+    <string name="sync_info_alert_message_to_local">¿Desea sincronizar los datos locales con los de MyCasaParticular?</string>
+    <string name="sync_info_alert_message_to_server">¿Desea sincronizar los datos de MyCasaParticular con los cambios realizados a la</string>
+    <string name="sync_info_alert_title">Sincronizar</string>
+    <string name="error_save">Ha ocurrido un error guardando las no disponibilidades</string>
+
+    <string name="invalid_date">Debe elegir una fecha entre  %1$s y %2$s.</string>
+    <string name="invalid_date_reserved">No puede seleccionar días reservados por MyCP.</string>
+    <string name="info_save">Los cambios locales han sido guardados</string>
+    <string name="reserved_mycp">Reservado por MyCP</string>
+    <string name="not_available">No Disponible</string>
+</resources>

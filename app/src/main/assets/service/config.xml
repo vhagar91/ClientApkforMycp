@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<configuration version="0.1">
+  <api environment="production">
+    <tag k="base_url" v="http://192.168.137.1/CBS/web/app_dev.php"/>
+    <tag k="response_format" v="json"/>
+    <tag k="key" v="api-5154bfa9e2cc53eee69d8f5c2587c8d51"/>
+  </api>
+</configuration>

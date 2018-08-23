@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".view.activities.ActivityMap">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:id="@+id/layout_all"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:orientation="vertical">
+
+        <!--<RelativeLayout
+            android:id="@+id/al_area_sps"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_back_blue"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <ImageButton
+                android:id="@+id/btn_next_reservation_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/selector_btn_circle"
+                android:src="@mipmap/ic_prev_"
+                android:onClick="backAction"/>
+
+            <TextView
+                android:id="@+id/al_text_view_welcome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="@string/locations"
+                style="@style/title_toolbar"/>
+
+            <ImageButton
+                android:id="@+id/btn_help"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/selector_btn_circle"
+                android:src="@mipmap/help"
+                android:onClick="helpOpenAction"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/btn_next_datex"
+                android:layout_toStartOf="@+id/btn_next_datex"/>
+
+            <ImageButton
+                android:id="@+id/btn_next_datex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/selector_btn_rectangle"
+                android:src="@mipmap/ic_cal_"
+                android:onClick="reservationsList"/>
+
+        </RelativeLayout>-->
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/app_bar_layout"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:theme="@style/AppTheme.AppBarOverlay">
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/bar_background"
+                app:popupTheme="@style/AppTheme.PopupOverlay"
+                app:contentInsetEnd="4dp"
+                app:contentInsetStart="4dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageButton
+                        android:id="@+id/menu_options"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginBottom="6dp"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:layout_marginStart="@dimen/activity_horizontal_margin"
+                        android:background="@drawable/selector_btn_transparent"
+                        android:tint="@android:color/white"
+                        app:srcCompat="@drawable/vector_arrow_prev"
+                        android:contentDescription="@string/app_name"
+                        android:onClick="backAction"/>
+
+                    <TextView
+                        android:id="@+id/main_bar_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/app_name_together"
+                        android:layout_toEndOf="@+id/menu_options"
+                        android:layout_toRightOf="@+id/menu_options"
+                        android:paddingLeft="20dp"
+                        android:ellipsize="end"
+                        android:lines="1"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        style="@style/bar_title"/>
+
+                    <ImageButton
+                        android:id="@+id/btn_help"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="6dp"
+
+                        android:gravity="end"
+                        android:layout_marginLeft="85dp"
+                        android:layout_toEndOf="@+id/main_bar_title"
+                        android:layout_toRightOf="@+id/main_bar_title"
+
+                        android:background="@drawable/selector_btn_transparent"
+                        android:src="@mipmap/help"
+                        android:contentDescription="@string/app_name"
+                        android:visibility="visible"
+                        android:onClick="helpOpenAction"/>
+
+                    <!--<ImageButton-->
+                        <!--android:id="@+id/menu_notifications"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:layout_alignParentRight="true"-->
+                        <!--android:layout_alignParentEnd="true"-->
+                        <!--android:layout_marginTop="6dp"-->
+                        <!--android:layout_marginBottom="6dp"-->
+                        <!--android:layout_marginRight="@dimen/activity_horizontal_margin"-->
+                        <!--android:layout_marginEnd="@dimen/activity_horizontal_margin"-->
+                        <!--android:background="@drawable/selector_btn_transparent"-->
+                        <!--app:srcCompat="@drawable/vector_calendar"-->
+                        <!--android:contentDescription="@string/app_name"-->
+                        <!--android:onClick="reservationsList"-->
+                        <!--android:visibility="gone"/>-->
+
+                </RelativeLayout>
+            </android.support.v7.widget.Toolbar>
+        </android.support.design.widget.AppBarLayout>
+
+        <FrameLayout
+            android:id="@+id/frame_container"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/frame_help_back"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/load_mask_bg"
+                    android:visibility="invisible">
+    </RelativeLayout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/frame_help"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:focusableInTouchMode="false"
+                    android:visibility="invisible">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:paddingBottom="5px"
+            android:layout_centerVertical="true"
+            android:background="@color/color_btn_orange">
+
+            <ImageButton
+                android:id="@+id/btn_closex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/selector_btn_circle"
+                android:onClick="helpCloseAction"
+                android:src="@mipmap/ic_close_"/>
+
+            <hds.aplications.com.mycp.view.components.ViewPagerHelp
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/view_pager_help"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_closex"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view_pager_help"
+                android:layout_margin="10dp"
+                android:animateLayoutChanges="true">
+
+                <ImageButton
+                    android:id="@+id/btn_prev_help"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/selector_btn_circle"
+                    android:src="@mipmap/ic_prev_"
+                    android:onClick="prevAction"/>
+
+                <LinearLayout
+                    android:id="@+id/layout_all_pointx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:animateLayoutChanges="true"
+                    android:layout_margin="10dp">
+                    <!--ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/ic_adult_"/-->
+                </LinearLayout>
+
+                <ImageButton
+                    android:id="@+id/btn_next_help"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/selector_btn_circle"
+                    android:src="@mipmap/ic_next_"
+                    android:onClick="nextAction"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
+

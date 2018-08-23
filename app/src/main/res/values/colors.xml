@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="errorText">#e9322d</color>
+    <color name="infoText">#3a87ad</color>
+    <color name="successText">#46a546</color>
+    <color name="warningText">#c67605</color>
+
+    <color name="calendar_day_no_current_month">#ffd7d9db</color>
+    <color name="calendar_text_today">#030101</color>
+    <color name="calendar_transparent">#00ffffff</color>
+
+    <color name="load_mask_bg">#b9000000</color>
+    <color name="color_floating_button">#fd8701</color>
+    <color name="color_floating_bar">#fdfdfe</color>
+
+    <color name="color_btn_orange">#f89406</color>
+    <color name="color_btn_ico_orange">#de8000</color>
+
+    <color name="color_btn_blue">#013567</color>
+    <color name="color_btn_ico_blue">#022d5a</color>
+
+    <color name="color_btn_red">#d93701</color>
+    <color name="color_btn_ico_red">#b43601</color>
+
+    <color name="color_btn_black">#80000000</color>
+
+    <color name="color_btn_green">#55a32f</color>
+    <color name="color_btn_ico_green">#4e942b</color>
+    <color name="reservation_item_bg">#7CC140</color>
+    <color name="reservation_item_bg_darker">#64A432</color>
+
+    <color name="color_back_blue">#094e75</color>
+    <color name="edit_text_loging_background">#fdfdfe</color>
+    <color name="edit_text_loging_border">#000001</color>
+    <color name="color_lighter_blue">#0c6994</color>
+
+    <color name="color_orange">#EF4416</color>
+
+    <color name="card_border">#9E9E9E</color>
+    <color name="card_content">#f2f1f1</color>
+    <color name="card_content_">#f2eeee</color>
+    <color name="in_card_room">#86c2df</color>
+    <color name="in_card_room_c">#cdecf9</color>
+    <color name="in_card_room_e">#e8f1fa</color>
+
+    <color name="background_badge">#ff8800</color>
+
+    <color name="bar_background">#357695</color>
+
+    <color name="text_loging">#6f868d</color>
+    <color name="hint_loging">#cbd4d6</color>
+
+    <color name="btn_text_dialog">#9E9E9E</color>
+
+    <color name="fab_button">#045078</color>
+    <color name="btn_press">#809774</color>
+    <color name="text_blue">#045078</color>
+
+    <color name="options_amber">#FFC107</color>
+    <color name="options_red">#f44336</color>
+    <color name="options_red_1">#ef7067</color>
+    <color name="options_red_2">#ea9f9a</color>
+    <color name="options_green">#4CAF50</color>
+
+    <color name="active_start">#fab717</color>
+
+    <color name="skeleton_baseColor">#fbfbfb</color>
+    <color name="skeleton_deepColor">#f2f0f0</color>
+</resources>

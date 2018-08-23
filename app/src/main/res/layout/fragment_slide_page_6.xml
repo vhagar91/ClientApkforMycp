@@ -1,0 +1,26 @@
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageButton
+        android:id="@+id/btn_w"
+        android:contentDescription="@null"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:padding="5dp"
+        android:background="@drawable/selector_btn_transparent"
+        android:src="@mipmap/exclamation"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text_1_page_7"
+        android:gravity="center"
+        android:padding="5dp"
+        android:layout_centerHorizontal="true"
+        style="@style/sub_sub_title_card"
+        android:layout_below="@+id/btn_w"/>
+
+</RelativeLayout>

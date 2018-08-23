@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@color/bar_background"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/layout_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="onClickProfile"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/circle_image_view_profile_user_image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="5dp"
+            android:src="@drawable/man"
+            app:civ_border_color="@color/text_loging"
+            app:civ_border_width="1dp" />
+        />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingRight="5dp">
+
+            <TextView
+                android:id="@+id/user_full_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/editprofile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/view_profile"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#ffffff" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+
+        android:layout_height="2dp"
+        android:background="#ffffff" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/appbar_padding_top"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/option_reservations_booked"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:background="@drawable/selector_btn_transparent"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="onClickReservations"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/booked"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/option_account"
+                    android:clickable="true"
+                    android:focusable="true"
+                    app:srcCompat="@drawable/vector_home"></ImageView>
+
+                <TextView
+                    android:id="@+id/senttin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+
+                    android:layout_alignEnd="@+id/acount"
+                    android:layout_alignRight="@+id/acount"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/reservations"
+                    android:textColor="@color/skeleton_baseColor"
+                    android:textSize="@dimen/calendar_text_medium" />
+            </LinearLayout>
+
+
+            <!--<LinearLayout-->
+                <!--android:id="@+id/option_configs"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:background="@drawable/selector_btn_transparent"-->
+                <!--android:clickable="true"-->
+                <!--android:onClick="onClickSettings"-->
+                <!--android:padding="10dp">-->
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/tool"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignLeft="@+id/option_configs"-->
+                    <!--android:clickable="true"-->
+                    <!--android:contentDescription="@string/app_name"-->
+                    <!--android:focusable="true"-->
+                    <!--android:src="@drawable/ic_filter_list_white_24dp" />-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/configs"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_alignEnd="@+id/tool"-->
+                    <!--android:layout_alignRight="@+id/tool"-->
+                    <!--android:layout_marginLeft="10dp"-->
+                    <!--android:text="@string/configs"-->
+                    <!--android:textColor="@color/skeleton_baseColor"-->
+                    <!--android:textSize="@dimen/calendar_text_medium" />-->
+            <!--</LinearLayout>-->
+            <LinearLayout
+                android:id="@+id/option_favorites"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onFavorites"
+                android:background="@drawable/selector_btn_transparent"
+                android:clickable="true"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/favorites"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:contentDescription="@string/app_name"
+                    android:focusable="true"
+                    android:src="@drawable/ic_favorite_white_24dp" />
+
+                <TextView
+                    android:id="@+id/more_favorites"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/title_search_results_favorites"
+                    android:textColor="@color/skeleton_baseColor"
+                    android:textSize="@dimen/calendar_text_medium" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/option_fhelp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="Security"
+                android:background="@drawable/selector_btn_transparent"
+                android:clickable="true"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/help"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:contentDescription="@string/app_name"
+                    android:focusable="true"
+                    android:src="@drawable/ic_security_white_24dp" />
+
+                <TextView
+                    android:id="@+id/more_help"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/security"
+                    android:textColor="@color/skeleton_baseColor"
+                    android:textSize="@dimen/calendar_text_medium" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/option_fterms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="TermsConditions"
+                android:background="@drawable/selector_btn_transparent"
+                android:clickable="true"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/terms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:contentDescription="@string/app_name"
+                    android:focusable="true"
+                    app:srcCompat="@drawable/vector_term" />
+
+                <TextView
+                    android:id="@+id/more_terms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/terms"
+                    android:textColor="@color/skeleton_baseColor"
+                    android:textSize="@dimen/calendar_text_medium" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/l_option_logout_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:background="@drawable/selector_btn_transparent"
+                android:clickable="true"
+                android:onClick="LogOut"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/option_logout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:contentDescription="@string/app_name"
+                    android:focusable="true"
+                    app:srcCompat="@drawable/ic_exit_to_app_white_24dp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/logout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/btn_logout"
+                    android:textColor="@color/skeleton_baseColor"
+                    android:textSize="@dimen/calendar_text_medium" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/card_border">
+    </RelativeLayout>
+
+</LinearLayout>

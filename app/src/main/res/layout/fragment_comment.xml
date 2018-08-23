@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/fragment_margin_bottom"
+    android:orientation="vertical">
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+
+
+     >
+     <de.hdodenhof.circleimageview.CircleImageView
+         xmlns:app="http://schemas.android.com/apk/res-auto"
+
+
+         app:civ_border_width="2dp"
+         app:civ_border_color="#FFFFFFFF"
+         android:focusable="true"
+         android:id="@+id/user_coment"
+
+         android:layout_width="50dp"
+         android:layout_height="50dp"
+         android:layout_marginRight="30dp"
+         android:layout_marginLeft="20dp"
+         android:scaleType="centerCrop"
+         android:src="@drawable/man"
+
+         android:layout_alignParentTop="true"
+         android:layout_centerHorizontal="true" />
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="vertical"
+
+         >
+
+     <TextView
+         android:id="@+id/user_name"
+         android:textColor="@color/color_btn_green"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:maxLines="1"
+
+         android:text="Fernando Gonzalese"
+         android:textAppearance="?android:attr/textAppearanceMedium"
+
+         android:textStyle="bold"/>
+     <android.support.v7.widget.AppCompatTextView
+         android:paddingTop="5dp"
+
+
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:textSize="@dimen/activity_horizontal_margin"
+         android:textStyle="bold"
+         android:text="Comentatio del Usuario dfasda  afsdfsfsdfsfdsdfsdfsfdsdfsfdsdfsfdsdfsf  asdasd a dad sad dasd "
+         app:autoSizeMaxTextSize="@dimen/app_bar_height"
+         android:scaleType="centerCrop"
+         android:layout_alignParentTop="true"
+         android:layout_centerHorizontal="true"
+         />
+     </LinearLayout>
+ </LinearLayout>
+
+
+</LinearLayout>

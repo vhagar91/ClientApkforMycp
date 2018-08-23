@@ -1,0 +1,364 @@
+<resources>
+    <string name="app_name">MyCasa Particular</string>
+    <string name="welcome_user">Welcome</string>
+    <string name="btn_input">LOGIN</string>
+    <string name="acept_action_exit">Accept</string>
+    <string name="cancel_action_exit">Cancel</string>
+    <string name="hint_user">User</string>
+    <string name="hint_pass">Password</string>
+    <string name="hint_email">Email</string>
+    <string name="no_internet_connection">Check your connection status and try again.</string>
+    <string name="info_alert_user">Please, enter your username and password</string>
+    <string name="lbl_room">Room</string>
+    <string name="loading_mask_text">Loading...</string>
+    <string name="login_user">Authenticating user data</string>
+    <string name="sync_info_alert_message_to_local">Would you like to synchronize local data with MyCasaParticular?</string>
+    <string name="sync_info_alert_message_to_server">Would you like to sync your MyCasaParticular data with the changes made to the account?</string>
+    <string name="sync_info_alert_title">Sync</string>
+    <string name="sync_data_title">Sync Data</string>
+    <string name="error_save">Error report</string>
+    <string name="hello">Hello</string>
+    <string name="today_info">Today is</string>
+    <string name="day_info">January 8, 2016</string>
+    <string name="next_reserv">Next Reservation</string>
+    <string name="btn_map">MAP</string>
+    <string name="btn_reser">RESERVATIONS</string>
+    <string name="locations">Locations</string>
+    <string name="reservations">Reservations</string>
+    <string name="emptyReservationsList">You have no reservations</string>
+    <string name="no_file_map">There are no map files</string>
+    <string name="adults">Adults:</string>
+    <string name="children">Children:</string>
+    <string name="destination">Travel destination:</string>
+    <string name="province">Province:</string>
+    <string name="no_data">(No Data)</string>
+    <string name="leaving_message">Press again to exit.</string>
+    <string name="option_no">No</string>
+    <string name="option_yes">Yes!</string>
+    <string name="no_rute">No route found</string>
+    <string name="text_view_no_map_info">You can download map and routing data from Internet</string>
+    <string name="button_download_cuba_map">Download</string>
+    <string name="text_view_downloading_progress">Downloading: %d%%</string>
+    <string name="distance">Distance</string>
+    <string name="choose_origin">Choose origin</string>
+    <string name="choose_destination">Choose destination</string>
+    <string name="leave_roundabout">Leave the roundabout</string>
+    <string name="sharp_left">Turn left suddenly on</string>
+    <string name="left">Turn left on</string>
+    <string name="slight_left">Turn left slowly on</string>
+    <string name="continuee">Stay</string>
+    <string name="continuee_on">Stay on</string>
+    <string name="slight_right">Turn right slowly on</string>
+    <string name="right">Turn right on</string>
+    <string name="sharp_right">Turn left suddenly on</string>
+    <string name="finish">End of the route</string>
+    <string name="reached_via">Get to</string>
+    <string name="take_exit">and take exit</string>
+    <string name="in">on</string>
+    <string name="roundabout">Use the roundabout</string>
+    <string name="unknown_instruction">Unknown Instruction</string>
+    <string name="no_detail">No Detail.</string>
+    <string name="start">Start</string>
+    <string name="finishp">Finish</string>
+    <string name="icorrect_credential">Invalid username or password</string>
+    <string name="outSide">This application is only available to use in Cuba</string>
+    <string name="remember_pass">Recordar</string>
+    <string name="btn_logout">Log Out</string>
+    <string name="text_1_page_1">You can set your location by pressing…</string>
+    <string name="text_1_page_2">If you choose a house, the date of checking in and checking out of the reservations that you have in this property, as well as the name of the accommodation facility will be shown.</string>
+    <string name="text_1_page_3">In order to calculate the route between two points press the point of origin some seconds</string>
+    <string name="text_2_page_3">Repeat the same operation to choose the destination point</string>
+    <string name="text_1_page_4">Then indicate the means of transportation you prefer</string>
+    <string name="text_2_page_4">The optimal route to get to your destination will be shown</string>
+    <string name="text_1_page_5">Next, consult our indications to follow the route</string>
+    <string name="text_1_page_6">In order to clean the route you set, you can use the button…</string>
+    <string name="text_1_page_7">The functionalities of the map are only available for the area of Cuba.</string>
+    <string name="permission_denied">Permission denied</string>
+    <string name="offline">Offline</string>
+    <string name="app_name_together">MyCasaParticular.com</string>
+    <string name="check_in">Check In</string>
+    <string name="check_out">Check Out</string>
+    <string name="btn_search">SEARCH</string>
+    <string name="select_date_info">Select a date.</string>
+    <string name="no_guests">Guests</string>
+    <string name="no_rooms">Rooms</string>
+    <string name="search_accomodation_title">SEARCH ACCOMODATION</string>
+    <string name="most_valued_houses">MOST VALUED HOUSES</string>
+    <string name="int_home_destination" translatable="false">Santiago de Cuba</string>
+    <string name="int_home_capacity" translatable="false">Capacity:2</string>
+    <string name="int_medal" translatable="false">Economy</string>
+    <string name="int_home_title" translatable="false">La Casa \'El Placer\'</string>
+    <string name="int_client_name" translatable="false">Miguel Gómez León</string>
+    <string name="prices_from">Prices From</string>
+    <string name="int_eur_price" translatable="false">EUR 00.00</string>
+    <string name="int_badge_num" translatable="false">0</string>
+    <string name="int_destination_name" translatable="false">Centro Habana, La Habana</string>
+    <string name="int_type_home" translatable="false">Casa Particular</string>
+    <string name="label_services">Services</string>
+    <string name="label_see_all">See All</string>
+    <string name="label_book_now">Book!</string>
+    <string name="label_breakfast">Breakfast</string>
+    <string name="label_dinner">Dinner</string>
+    <string name="label_parking">Parking</string>
+    <string name="label_laundry">Laundry</string>
+    <string name="label_stereo">Stereo</string>
+    <string name="label_audiovisual">Audiovisual</string>
+    <string name="label_smoke">Smoke</string>
+    <string name="label_safe">Safe</string>
+    <string name="label_cradle">Cradle</string>
+    <string name="label_terrace">Terrace</string>
+    <string name="label_yard">Yard</string>
+    <string name="label_hvac">HVAC</string>
+    <string name="int_hvac" translatable="false">Air Conditioning</string>
+    <string name="label_bath">Bathroom</string>
+    <string name="int_bath">Private, Interior</string>
+    <string name="label_balcony">Balcony</string>
+    <string name="label_windows">Windows</string>
+    <string name="label_beds">Beds</string>
+    <string name="title_search_results">SEARCH RESULTS</string>
+    <string name="children_">Children</string>
+    <string name="adults_">Adults</string>
+    <string name="reservation_details">Reservation details</string>
+    <string name="total_price">Total Price:</string>
+    <string name="fixed_fee">Fixed Fee</string>
+    <string name="client_service_fee">Client Service Fee</string>
+    <string name="lodging_price">Lodging Price</string>
+    <string name="accept_terms_and_conditions">I Accept Terms and Conditions</string>
+    <string name="payment">Payment</string>
+    <string name="search">Search</string>
+    <string name="home_capacity">Capacity:</string>
+    <string name="loading_accomodations">Loading Accommodations...</string>
+    <string name="detail">Detail</string>
+    <string name="description">Description</string>
+    <string name="min_guests">Up to %d Guests</string>
+    <string name="beedrooms">%d Beedrooms</string>
+    <string name="room_number">Room #%d</string>
+    <string name="from_c">"FROM: "</string>
+    <string name="check_out_amp_pay"><![CDATA[Check out & Pay]]></string>
+    <string name="payy">Pay</string>
+    <string name="no_res_hab">No ha reservado ninguna habitación</string>
+    <string name="label_register">Register</string>
+    <string name="search_destination">Search destination</string>
+    <string name="no_name">Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="hint_pass_repeat">Repeat</string>
+    <string name="search_country">Search country</string>
+    <string name="acep_t_c">Accept the terms and conditions</string>
+    <string name="pass_eq">Passwords must be equal</string>
+    <string name="name_r">The name is required</string>
+    <string name="city_r">The city is required</string>
+    <string name="email_r">The email is required</string>
+    <string name="c_user">Creating user...</string>
+    <string name="c_profile">Saving Changes...</string>
+    <string name="current_pass">Current Password</string>
+    <string name="change_pass">Change Password</string>
+    <string name="hint_new_pass">New pasword</string>
+    <string name="title_search_results_favorites">Favorites</string>
+    <string name="create_account_link">No account yet? Create one</string>
+    <string name="phone">Phone number</string>
+    <string name="city">City</string>
+    <string name="take_foto">Take Photo</string>
+    <string name="choose_pic">Choose from Library</string>
+    <string name="cancel">Cancel</string>
+    <string name="configs">Preferences</string>
+    <string name="Confirm">Confirm</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string-array name="list_preference_entries">
+        <item>Entry 1</item>
+        <item>Entry 2</item>
+        <item>Entry 3</item>
+    </string-array>
+
+    <string-array name="list_preference_entry_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="multi_select_list_preference_default_value" />
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+    <string name="view_profile">View your profile</string>
+    <string name="settings">Settings</string>
+    <string name="help">Help Center</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_mycasatrip">MycasatripActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="slogan">Lodging  where Cuba, Cuba is!</string>
+    <string name="coin">Coin</string>
+    <string name="language">Languages</string>
+    <string name="cange_pass">Change Password</string>
+    <string name="onlinepay">Online Payment:</string>
+    <string name="onlineprepay">Online Prepayment:</string>
+    <string name="pagolodgin">Pay at accommodation:</string>
+    <string name="paydetails">Payment Details:</string>
+    <string name="doubleroom">Double Room</string>
+    <string name="unavailable">Not available</string>
+    <string name="skrillpayment">Skrill Payment</string>
+    <string name="terms">Term &amp; Condition</string>
+    <string name="security">Security</string>
+    <string name="basket">Cart</string>
+    <string name="btn_login">Log In</string>
+    <string name="booked_name">Booked</string>
+    <string name="available_name">Available</string>
+    <string name="pendig_name">Pending</string>
+    <string name="gen_booking">Generating booking...</string>
+    <string name="load_skrill">Loading Skrill...</string>
+    <string name="loading_accomodations_data">Loading Accommodation Data...</string>
+    <string name="loading_reservations">Loading Reservations...</string>
+    <string name="checkin_available">Checking Accomodation Availavility...</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="title_activity_nab">NabActivity</string>
+    <string name="title_activity_scrolling">Comments</string>
+    <string name="large_text">
+        "Material is the metaphor.\n\n"
+
+        "A material metaphor is the unifying theory of a rationalized space and a system of motion."
+        "The material is grounded in tactile reality, inspired by the study of paper and ink, yet "
+        "technologically advanced and open to imagination and magic.\n"
+        "Surfaces and edges of the material provide visual cues that are grounded in reality. The "
+        "use of familiar tactile attributes helps users quickly understand affordances. Yet the "
+        "flexibility of the material creates new affordances that supercede those in the physical "
+        "world, without breaking the rules of physics.\n"
+        "The fundamentals of light, surface, and movement are key to conveying how objects move, "
+        "interact, and exist in space and in relation to each other. Realistic lighting shows "
+        "seams, divides space, and indicates moving parts.\n\n"
+
+        "Bold, graphic, intentional.\n\n"
+
+        "The foundational elements of print based design typography, grids, space, scale, color, "
+        "and use of imagery guide visual treatments. These elements do far more than please the "
+        "eye. They create hierarchy, meaning, and focus. Deliberate color choices, edge to edge "
+        "imagery, large scale typography, and intentional white space create a bold and graphic "
+        "interface that immerse the user in the experience.\n"
+        "An emphasis on user actions makes core functionality immediately apparent and provides "
+        "waypoints for the user.\n\n"
+
+        "Motion provides meaning.\n\n"
+
+        "Motion respects and reinforces the user as the prime mover. Primary user actions are "
+        "inflection points that initiate motion, transforming the whole design.\n"
+        "All action takes place in a single environment. Objects are presented to the user without "
+        "breaking the continuity of experience even as they transform and reorganize.\n"
+        "Motion is meaningful and appropriate, serving to focus attention and maintain continuity. "
+        "Feedback is subtle yet clear. Transitions are efﬁcient yet coherent.\n\n"
+
+        "3D world.\n\n"
+
+        "The material environment is a 3D space, which means all objects have x, y, and z "
+        "dimensions. The z-axis is perpendicularly aligned to the plane of the display, with the "
+        "positive z-axis extending towards the viewer. Every sheet of material occupies a single "
+        "position along the z-axis and has a standard 1dp thickness.\n"
+        "On the web, the z-axis is used for layering and not for perspective. The 3D world is "
+        "emulated by manipulating the y-axis.\n\n"
+
+        "Light and shadow.\n\n"
+
+        "Within the material environment, virtual lights illuminate the scene. Key lights create "
+        "directional shadows, while ambient light creates soft shadows from all angles.\n"
+        "Shadows in the material environment are cast by these two light sources. In Android "
+        "development, shadows occur when light sources are blocked by sheets of material at "
+        "various positions along the z-axis. On the web, shadows are depicted by manipulating the "
+        "y-axis only. The following example shows the card with a height of 6dp.\n\n"
+
+        "Resting elevation.\n\n"
+
+        "All material objects, regardless of size, have a resting elevation, or default elevation "
+        "that does not change. If an object changes elevation, it should return to its resting "
+        "elevation as soon as possible.\n\n"
+
+        "Component elevations.\n\n"
+
+        "The resting elevation for a component type is consistent across apps (e.g., FAB elevation "
+        "does not vary from 6dp in one app to 16dp in another app).\n"
+        "Components may have different resting elevations across platforms, depending on the depth "
+        "of the environment (e.g., TV has a greater depth than mobile or desktop).\n\n"
+
+        "Responsive elevation and dynamic elevation offsets.\n\n"
+
+        "Some component types have responsive elevation, meaning they change elevation in response "
+        "to user input (e.g., normal, focused, and pressed) or system events. These elevation "
+        "changes are consistently implemented using dynamic elevation offsets.\n"
+        "Dynamic elevation offsets are the goal elevation that a component moves towards, relative "
+        "to the component’s resting state. They ensure that elevation changes are consistent "
+        "across actions and component types. For example, all components that lift on press have "
+        "the same elevation change relative to their resting elevation.\n"
+        "Once the input event is completed or cancelled, the component will return to its resting "
+        "elevation.\n\n"
+
+        "Avoiding elevation interference.\n\n"
+
+        "Components with responsive elevations may encounter other components as they move between "
+        "their resting elevations and dynamic elevation offsets. Because material cannot pass "
+        "through other material, components avoid interfering with one another any number of ways, "
+        "whether on a per component basis or using the entire app layout.\n"
+        "On a component level, components can move or be removed before they cause interference. "
+        "For example, a floating action button (FAB) can disappear or move off screen before a "
+        "user picks up a card, or it can move if a snackbar appears.\n"
+        "On the layout level, design your app layout to minimize opportunities for interference. "
+        "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
+        "when a user tries to pick up one of cards.\n\n"
+    </string>
+</resources>

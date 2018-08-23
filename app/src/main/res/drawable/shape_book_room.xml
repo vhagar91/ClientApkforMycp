@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:angle="135"
+                android:centerColor="@android:color/transparent"
+                android:endColor="@android:color/transparent"
+                android:startColor="@android:color/transparent"
+                android:type="linear"/>
+            <stroke
+                android:width="1dp"
+                android:color="@color/card_border"/>
+
+            <corners
+                android:radius="1dp"/>
+
+        </shape>
+    </item>
+</layer-list>-->
+<!--<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/card_border" />
+        </shape>
+    </item>
+    <item android:bottom="1dp">
+        // add android:right="5dp" and android:left="5dp" for border on left and right
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/white" />
+        </shape>
+    </item>
+</layer-list>-->
+
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:right="-1dp" android:left="-1dp" android:top="-1dp">
+        <shape>
+            <solid android:color="@android:color/transparent" />
+            <stroke android:width="1dp" android:color="@color/card_border" />
+        </shape>
+    </item>
+</layer-list>

@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                 xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                 xmlns:tools="http://schemas.android.com/tools"
+                                                 android:layout_width="match_parent"
+                                                 android:layout_height="match_parent"
+                                                 android:fitsSystemWindows="false">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_scrollFlags="scroll|enterAlways"
+        android:background="@android:color/white">
+
+        <LinearLayout
+            android:id="@+id/linear_layout_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/shape_back_search"
+            android:animateLayoutChanges="true"
+            app:layout_scrollFlags="scroll|enterAlways">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                style="@style/search_accomodation"
+                android:paddingTop="10dp"
+                android:text="@string/search_accomodation_title"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="10dp">
+
+                <!--<android.support.v7.widget.AppCompatEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/edit_text_home"
+                    android:hint="@string/search_destination"
+                    android:maxLines="1"
+                    android:drawableRight="@drawable/container_vector_search"
+                    android:drawableEnd="@drawable/container_vector_search"/>-->
+
+                <Spinner
+                    android:id="@+id/spinner_search_destination"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:drawSelectorOnTop="true"
+                    android:background="@android:color/transparent"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="4dp">
+                    <android.support.v7.widget.AppCompatEditText
+                        android:id="@+id/check_in"
+                        android:layout_width="0dp"
+                        android:layout_weight=".50"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginEnd="2dp"
+                        style="@style/edit_text_home"
+                        android:hint="@string/check_in"
+                        android:maxLines="1"
+                        android:digits="123"
+                        android:focusable="false"
+                        android:drawableRight="@drawable/container_vector_calendar"
+                        android:drawableEnd="@drawable/container_vector_calendar"/>
+                    <android.support.v7.widget.AppCompatEditText
+                        android:id="@+id/check_out"
+                        android:layout_width="0dp"
+                        android:layout_weight=".50"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginStart="2dp"
+                        style="@style/edit_text_home"
+                        android:hint="@string/check_out"
+                        android:maxLines="1"
+                        android:digits="123"
+                        android:focusable="false"
+                        android:drawableRight="@drawable/container_vector_calendar"
+                        android:drawableEnd="@drawable/container_vector_calendar"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="4dp">
+                    <android.support.v7.widget.AppCompatEditText
+                        android:id="@+id/no_guests"
+                        android:layout_width="0dp"
+                        android:layout_weight=".50"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginEnd="2dp"
+                        style="@style/edit_text_home"
+                        android:hint="@string/no_guests"
+                        android:maxLines="1"
+                        android:inputType="number"
+                        android:drawableRight="@drawable/container_vector_guests"
+                        android:drawableEnd="@drawable/container_vector_guests"/>
+                    <android.support.v7.widget.AppCompatEditText
+                        android:id="@+id/no_rooms"
+                        android:layout_width="0dp"
+                        android:layout_weight=".50"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginStart="2dp"
+                        style="@style/edit_text_home"
+                        android:hint="@string/no_rooms"
+                        android:maxLines="1"
+                        android:inputType="number"
+                        android:drawableRight="@drawable/container_vector_rooms"
+                        android:drawableEnd="@drawable/container_vector_rooms"/>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/btn_search"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/selector_btn_green"
+                    android:textColor="@android:color/white"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:orientation="vertical">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:orientation="vertical"
+            android:background="@color/color_btn_green">
+        </View>
+        <TextView
+            android:id="@+id/title_list_acomodations"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingTop="4dp"
+            android:paddingBottom="6dp"
+            android:textSize="@dimen/text_search_accomodation"
+            android:textStyle="bold"
+            android:textColor="@color/fab_button"
+            android:background="@android:color/white"
+            android:text="@string/most_valued_houses"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/card_border"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:paddingTop="7dp"
+            tools:listitem="@layout/item_accommodation" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/loading_mask_accommodations"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/load_mask_bg"
+        android:clickable="true"
+        android:focusableInTouchMode="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:paddingTop="30dp"
+        android:visibility="gone">
+
+        <ProgressBar
+        android:id="@+id/loading_mask_progress"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:indeterminate="true"
+        android:background="@android:color/transparent"
+        android:indeterminateDrawable="@drawable/circular_progress_bar"
+        android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/loading_mask_progress"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="20dp"
+            android:text="@string/loading_accomodations"
+            android:textColor="#ffffff"/>
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

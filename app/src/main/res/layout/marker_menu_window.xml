@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout
+    android:id="@+id/view_marker"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_btn_black"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp">
+
+        <Button
+            android:id="@+id/mmw_origin"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="@string/choose_origin"
+            android:gravity="center_vertical|left"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="1dp"
+            android:padding="5dp"
+            android:drawableLeft="@mipmap/origin_"
+            android:drawablePadding="10dp"
+            android:background="@drawable/selector_btn_transparent"
+            android:textAllCaps="false"
+            style="@style/btn_title_large_"/>
+
+        <Button
+            android:id="@+id/mmw_destination"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="@string/choose_destination"
+            android:gravity="center_vertical|left"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="1dp"
+            android:padding="5dp"
+            android:drawableLeft="@mipmap/destination_"
+            android:drawablePadding="10dp"
+            android:background="@drawable/selector_btn_transparent"
+            android:textAllCaps="false"
+            style="@style/btn_title_large_"/>
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/arrow"
+        android:layout_width="15dp"
+        android:layout_height="10dp"
+        android:background="@drawable/shape_btn_black"
+        android:layout_gravity="center_horizontal"/>
+
+</LinearLayout>

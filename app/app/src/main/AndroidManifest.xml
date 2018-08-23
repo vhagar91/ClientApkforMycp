@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="hds.aplications.com.mycp" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_SYNC_STATS" />
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
+
+    <!-- To auto-complete the email text field in the goLogin form with the user's emails -->
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:name=".MyCP"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="AA_DB_NAME"
+            android:value="hd.db" />
+        <meta-data
+            android:name="AA_DB_VERSION"
+            android:value="2" />
+        <meta-data
+            android:name="AA_MODELS"
+            android:value="hds.aplications.com.mycplight.models.Language,hds.aplications.com.mycplight.models.Province,hds.aplications.com.mycplight.models.Municipality,hds.aplications.com.mycplight.models.Address,hds.aplications.com.mycplight.models.Room,hds.aplications.com.mycplight.models.Accommodation,hds.aplications.com.mycplight.models.AudiovisualType,hds.aplications.com.mycplight.models.BathroomType,hds.aplications.com.mycplight.models.ClimateType,hds.aplications.com.mycplight.models.Facility,hds.aplications.com.mycplight.models.FacilityType,hds.aplications.com.mycplight.models.Photo,hds.aplications.com.mycplight.models.PhotoType,hds.aplications.com.mycplight.models.Reservation,hds.aplications.com.mycplight.models.ReservationStatus,hds.aplications.com.mycplight.models.RoomType,hds.aplications.com.mycplight.models.SpokenLanguage,hds.aplications.com.mycplight.models.UDetails,hds.aplications.com.mycplight.models.User,hds.aplications.com.mycplight.models.UserAccommodation" />
+
+        <receiver android:name=".helpers.WifiReceiver" >
+            <intent-filter android:priority="100" >
+                <action android:name="android.net.wifi.STATE_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".view.activities.ActivityNoFilesMap"
+            android:label="@string/title_activity_activity_initial"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.LoginActivity"
+            android:label="@string/title_activity_login"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+
+        <service android:name=".services.authenticator.AuthenticatorService">
+            <intent-filter>
+                <action android:name="android.accounts.AccountAuthenticator" />
+            </intent-filter>
+            <meta-data android:name="android.accounts.AccountAuthenticator" android:resource="@xml/authenticator" />
+        </service>
+
+        <provider
+            android:name = ".services.sync.Provider"
+            android:authorities="hds.aplications.com.mycp.provider"
+            android:label="@string/sync_provider_title"
+            android:exported="false"
+            android:syncable="true" >
+        </provider>
+        <service
+            android:name =".services.sync.SyncService"
+            android:exported="true"
+            >
+
+            <intent-filter>
+                <action android:name="android.content.SyncAdapter"/>
+            </intent-filter>
+            <meta-data android:name="android.content.SyncAdapter"
+                android:resource="@xml/syncadapter" />
+
+        </service>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+    </application>
+
+</manifest>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_window_focused="false" android:state_enabled="true" android:drawable="@mipmap/zoom_out"/>
+    <item android:state_window_focused="false" android:state_enabled="false" android:drawable="@mipmap/zoom_out"/>
+    <item android:state_pressed="true" android:drawable="@mipmap/zoom_out_p"/>
+    <item android:state_focused="true" android:drawable="@mipmap/zoom_out" android:state_enabled="true"/>
+    <item android:state_enabled="true" android:drawable="@mipmap/zoom_out"/>
+    <item android:state_focused="true" android:drawable="@mipmap/zoom_out"/>
+    <item android:drawable="@drawable/shape_btn_green"/>
+</selector>

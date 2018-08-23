@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:animateLayoutChanges="true">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar_layout"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:theme="@style/AppTheme.AppBarOverlay">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/bar_background"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:contentInsetEnd="4dp"
+            app:contentInsetStart="4dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageButton
+                    android:id="@+id/menu_options"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginStart="@dimen/activity_horizontal_margin"
+                    android:background="@drawable/selector_btn_transparent"
+                    app:srcCompat="@drawable/vector_menu_burger"
+                    android:contentDescription="@string/app_name"/>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/menu_options"
+                    android:layout_toRightOf="@+id/menu_options"
+                    android:layout_toStartOf="@+id/menu_notifications"
+                    android:layout_toLeftOf="@+id/menu_notifications"
+                    android:layout_centerVertical="true"
+                    android:paddingStart="2dp"
+                    android:paddingEnd="2dp"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/main_bar_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/app_name_together"
+                        android:ellipsize="end"
+                        android:lines="1"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        style="@style/bar_title"
+                        android:drawableLeft="@drawable/container_vector_mycp"
+                        android:drawableStart="@drawable/container_vector_mycp"/>
+                </RelativeLayout>
+
+                <ImageButton
+                    android:id="@+id/menu_notifications"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                    android:background="@drawable/selector_btn_transparent"
+                    app:srcCompat="@drawable/ic_shopping_cart_white_24dp"
+                    android:contentDescription="@string/app_name"
+                    android:layout_centerVertical="true"/>
+
+                <TextView
+                    android:id="@+id/badge"
+                    android:layout_width="13dp"
+                    android:layout_height="13dp"
+                    android:background="@drawable/shape_badge"
+                    android:gravity="center"
+                    style="@style/badge"
+                    android:layout_alignTop="@+id/menu_notifications"
+                    android:layout_alignRight="@+id/menu_notifications"
+                    android:layout_alignEnd="@+id/menu_notifications"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginRight="-3dp"
+                    android:layout_marginEnd="-3dp"
+                    android:text="@string/int_badge_num"/>
+            </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:id="@+id/base_relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize">
+        <RelativeLayout
+            android:id="@+id/content_activity"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:animateLayoutChanges="true"
+            android:layout_above="@+id/relative_layout_snackbar">
+
+            <!--<ImageButton
+                android:id="@+id/fab_menu"
+                android:layout_width="?attr/actionBarSize"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="@dimen/fab_margin"
+                android:background="@drawable/selector_fab_button_blue"
+                android:contentDescription="@string/app_name"
+                app:srcCompat="@drawable/vector_menu_burger"
+                android:elevation="8dp"/>-->
+            <include layout="@layout/options_menu"
+                     android:visibility="gone"/>
+
+
+
+
+
+
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                app:useCompatPadding="true"
+                app:backgroundTint="@color/bar_background"
+                app:srcCompat="@drawable/vector_menu_burger"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relative_layout_snackbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/load_mask_bg">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/offline"
+                android:textAlignment="center"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:textColor="@android:color/white"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <include layout="@layout/load_mask"
+             android:visibility="gone"/>
+
+</android.support.design.widget.CoordinatorLayout>

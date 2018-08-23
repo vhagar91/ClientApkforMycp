@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<account-authenticator xmlns:android="http://schemas.android.com/apk/res/android"
+                       android:accountType="hds.aplications.com.mycplight"
+                       android:icon="@drawable/mcp"
+                       android:smallIcon="@drawable/mcp"
+                       android:label="@string/app_name"
+                       android:accountPreferences="@xml/prefs"/>

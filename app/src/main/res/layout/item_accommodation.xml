@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="4dp"
+    android:paddingRight="4dp"
+    android:paddingTop="7dp"
+    android:paddingBottom="7dp"
+    android:layout_margin="2dp"
+    android:orientation="horizontal"
+    android:baselineAligned="false"
+    android:background="@drawable/shape_payment_room">
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight=".50"
+        android:layout_gravity="center"
+        android:background="@drawable/shape_back_favorite">
+        <ImageView
+            android:id="@+id/image_remote"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/app_name"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:background="@drawable/shape_back_start"
+            android:paddingBottom="20dp">
+            <ImageView
+                android:id="@+id/inmediate_booking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/vector_marker_cohete"
+                android:contentDescription="@string/app_name"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:paddingTop="4dp">
+                <com.richpath.RichPathView
+                    android:id="@+id/star_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_start"
+                    android:layout_marginStart="@dimen/margin_start"
+                    app:vector="@drawable/vector_start_ok"/>
+
+                <com.richpath.RichPathView
+                    android:id="@+id/star_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_start"
+                    android:layout_marginStart="@dimen/margin_start"
+                    app:vector="@drawable/vector_start_ok"/>
+                <com.richpath.RichPathView
+                    android:id="@+id/star_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_start"
+                    android:layout_marginStart="@dimen/margin_start"
+                    app:vector="@drawable/vector_start_ok"/>
+                <com.richpath.RichPathView
+                    android:id="@+id/star_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_start"
+                    android:layout_marginStart="@dimen/margin_start"
+                    app:vector="@drawable/vector_start_ok"/>
+                <com.richpath.RichPathView
+                    android:id="@+id/star_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_start"
+                    android:layout_marginStart="@dimen/margin_start"
+                    app:vector="@drawable/vector_start_ok"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="5dp"
+            android:paddingTop="20dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/shape_back_favorite">
+            <ImageView
+                android:id="@+id/btn_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/vector_detail"/>
+            <com.richpath.RichPathView
+                android:id="@+id/rich_view_favorite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                app:vector="@drawable/vector_favorite_w"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".50"
+        android:orientation="vertical"
+        android:padding="4dp">
+
+        <TextView
+            android:id="@+id/accommodation_title"
+            style="@style/text_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:text="@string/int_home_title"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/color_btn_green"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/accommodation_destination"
+            style="@style/text_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/int_home_destination"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/text_loging" />
+
+        <TextView
+            android:id="@+id/home_capacity"
+            style="@style/text_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/home_capacity"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/text_loging" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/text_card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:layout_marginRight="4dp"
+                android:text="@string/from_c"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/text_loging" />
+
+            <TextView
+                android:id="@+id/min_price_eur"
+                style="@style/text_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/int_eur_price"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/text_blue"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btn_book_now"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/selector_btn_blue"
+                android:ellipsize="end"
+                android:lines="1"
+                android:minHeight="0dp"
+                android:padding="4dp"
+                android:text="@string/label_book_now"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

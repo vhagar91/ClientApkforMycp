@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout
+    android:id="@+id/view_marker"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/shape_back_green"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/btn_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/selector_btn_circle"
+            android:src="@mipmap/ic_close_"/>
+
+        <TextView
+            android:id="@+id/bubble_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_close"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="5dp"
+            android:text="Casa particular en la Habana"
+            style="@style/sub_sub_title_card"/>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@color/color_btn_ico_green"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/layout_all_point"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:animateLayoutChanges="true">
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/relative_layout_date_grup"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="10dp"
+            android:animateLayoutChanges="true">
+
+            <ImageButton
+                android:id="@+id/btn_prev_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/selector_btn_circle"
+                android:src="@mipmap/ic_prev_"
+                android:onClick="prevAction"/>
+
+            <LinearLayout
+                android:id="@+id/layout_checkin_checkout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/btn_prev_date"
+                android:layout_toLeftOf="@+id/btn_next_date"
+                android:animateLayoutChanges="true"
+                android:orientation="horizontal"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp">
+                <LinearLayout
+                    android:id="@+id/layout_day_checkin"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".50"
+                    android:layout_marginLeft="5dp">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/ic_checkin_"
+                        android:layout_gravity="center_vertical"/>
+                    <TextView
+                        android:id="@+id/day_checkin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_gravity="center_vertical"
+                        android:text="Ago 12, 2017"
+                        style="@style/sub_sub_title_card"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/layout_day_checkout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".50"
+                    android:layout_marginRight="5dp"
+                    android:layout_alignParentRight="true">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/ic_checkout_"
+                        android:layout_gravity="center_vertical"/>
+                    <TextView
+                        android:id="@+id/day_checkout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_gravity="center_vertical"
+                        android:text="Ago 12, 2017"
+                        style="@style/sub_sub_title_card"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/btn_next_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/selector_btn_circle"
+                android:src="@mipmap/ic_next_"
+                android:onClick="nextAction"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/arrow"
+        android:layout_width="30dp"
+        android:layout_height="20dp"
+        android:background="@drawable/shape_back_green"
+        android:layout_gravity="center_horizontal"/>
+
+</LinearLayout>

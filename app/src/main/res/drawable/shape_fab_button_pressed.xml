@@ -1,0 +1,13 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="@color/btn_press"/>
+        </shape>
+    </item>
+
+    <!--<item android:bottom="@dimen/fab_padding" android:left="@dimen/fab_padding" android:top="@dimen/fab_padding" android:right="@dimen/fab_padding">
+        <shape android:shape="oval">
+            <solid android:color="@color/btn_pressed"/>
+        </shape>
+    </item>-->
+</layer-list>

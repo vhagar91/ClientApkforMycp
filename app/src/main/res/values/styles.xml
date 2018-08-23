@@ -1,0 +1,276 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#55a32f</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">#68a14c</item>
+    </style>
+
+    <style name="EditTheme" parent="Theme.AppCompat.Light">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@android:color/white</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@android:color/white</item>
+    </style>
+
+    <style name="EditThemeB" parent="Theme.AppCompat.Light">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@android:color/black</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@android:color/black</item>
+    </style>
+
+    <style name="EditThemeW" parent="Theme.AppCompat.Light">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/text_loging</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/text_loging</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">true</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="SpinnerTextStyle">
+        <item name="android:background">@drawable/spinner_text_shape</item>
+        <!--item name="android:padding">10dp</item-->
+        <item name="android:paddingLeft">2dp</item>
+        <item name="android:paddingTop">11dp</item>
+        <item name="android:paddingBottom">11dp</item>
+    </style>
+
+    <style name="spinner_style">
+        <!--
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        -->
+        <item name="android:background">@drawable/gradient_spinner</item>
+
+        <!--
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">20dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        -->
+
+        <!--item name="android:popupBackground">#DFFFFFFF</item-->
+    </style>
+
+    <!--style name="TextViewStyle">
+        <item name="android:bor">1dp</item>
+    </style-->
+
+    <style name="title_toolbar">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/title_toolbar</item>
+    </style>
+
+    <style name="title_card">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/title_card</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="sub_title_card">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/sub_title_card</item>
+        <item name="android:fontFamily">sans-serif-thin</item>
+    </style>
+
+    <style name="sub_title_card_bold">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/sub_title_card</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="sub_sub_title_card">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/sub_sub_title_card</item>
+        <item name="android:fontFamily">sans-serif-thin</item>
+    </style>
+
+    <style name="sub_sub_normal_title_card">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/sub_sub_title_card</item>
+    </style>
+
+    <style name="text_normal">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/text_normal</item>
+        <item name="android:fontFamily">sans-serif-thin</item>
+    </style>
+
+    <style name="text_date">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/text_date</item>
+        <item name="android:fontFamily">sans-serif-thin</item>
+    </style>
+
+    <style name="btn_title_large">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/btn_title_large</item>
+        <item name="android:fontFamily">sans-serif-thin</item>
+    </style>
+
+    <style name="btn_title_large_">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/btn_title_large</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+    <style name="btn_title_medium">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/btn_title_medium</item>
+    </style>
+
+    <style name="btn_title_medium_">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/btn_title_medium</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+    <style name="text_small">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/text_normal</item>
+    </style>
+
+    <style name="text_help">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/sub_sub_title_card</item>
+    </style>
+
+    <style name="badge">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/badge</item>
+    </style>
+
+    <style name="bar_title">
+        <item name="android:textColor">@android:color/white</item>
+        <!--<item name="android:textAppearance">?android:attr/textAppearanceSmall</item>-->
+        <!--<item name="android:typeface">serif</item>-->
+        <item name="fontPath">fonts/Myriad-Pro-Semibold_31650.ttf</item>
+        <item name="android:textSize">@dimen/bar_title</item>
+    </style>
+
+    <style name="edit_text_loging">
+        <item name="android:background">@drawable/shape_edit_text_loging</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:textColor">@color/text_loging</item>
+        <item name="android:drawablePadding">5dp</item>
+    </style>
+
+    <style name="input_layout_appearance_loging" parent="@android:style/TextAppearance">
+        <item name="android:textSize">@dimen/text_loging</item>
+        <item name="android:textColor">@color/hint_loging</item>
+    </style>
+
+    <style name="search_accomodation">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/text_search_accomodation</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="edit_text_home">
+        <item name="android:background">@drawable/shape_edit_text_home</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textColorHint">@color/hint_loging</item>
+        <item name="android:drawablePadding">5dp</item>
+        <item name="android:theme">@style/EditTheme</item>
+    </style>
+
+    <style name="edit_text_home_b">
+        <item name="android:background">@drawable/shape_edit_text_home_b</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textColorHint">@color/hint_loging</item>
+        <item name="android:drawablePadding">5dp</item>
+        <item name="android:theme">@style/EditThemeB</item>
+    </style>
+
+    <style name="edit_text_login">
+        <item name="android:background">@drawable/shape_edit_text_login</item>
+        <item name="android:padding">15dp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textColorHint">@color/hint_loging</item>
+        <!--<item name="android:drawablePadding">5dp</item>-->
+        <item name="android:theme">@style/EditTheme</item>
+    </style>
+
+    <style name="edit_text_home_w">
+        <item name="android:background">@drawable/shape_edit_text_w</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:textColor">@color/text_loging</item>
+        <item name="android:textColorHint">@color/hint_loging</item>
+        <item name="android:drawablePadding">5dp</item>
+        <item name="android:theme">@style/EditThemeW</item>
+    </style>
+
+    <style name="spinner_text_book">
+        <item name="android:background">@drawable/shape_edit_text_w</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:textColor">@color/text_loging</item>
+        <item name="android:textColorHint">@color/hint_loging</item>
+        <item name="android:drawablePadding">5dp</item>
+        <item name="android:theme">@style/EditThemeW</item>
+    </style>
+
+    <style name="calendar_title">
+        <item name="android:textColor">@color/text_loging</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+    </style>
+
+    <style name="calendar_week_day">
+        <item name="android:textColor">@color/text_loging</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+    </style>
+
+    <style name="dialog_btn">
+        <item name="android:textColor">@color/btn_text_dialog</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+    </style>
+
+    <style name="text_card">
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">left|center</item>
+        <item name="android:paddingBottom">2dp</item>
+    </style>
+
+    <style name="MyDialog">
+        <!--<item name="android:windowNoTitle">true</item>-->
+        <!--<item name="android:windowFullscreen">true</item>-->
+        <!--<item name="android:windowIsTranslucent">true</item>
+        <item name = "android:windowContentOverlay" >@null</item >
+        <item name = "android:colorBackgroundCacheHint" >@null</item >
+        <item name = "android:backgroundDimEnabled">true</item>-->
+        <!--<item name = "android:windowBackground" >@android:color/transparent</item >-->
+    </style>
+
+    <style name="CheckboxStyle" parent="AppTheme">
+        <item name="colorAccent">@android:color/white</item>
+        <item name="android:textColorSecondary">@android:color/white</item>
+    </style>
+</resources>

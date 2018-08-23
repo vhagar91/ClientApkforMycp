@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ACCOUNT_TYPE" translatable="false">hds.aplications.com.mycp</string>
+    <string name="CONTENT_AUTHORITY" translatable="false">hds.aplications.com.mycp.sync.provider</string>
+    <string name="AUTHTOKEN_TYPE" translatable="false">hds.aplications.com.mycp</string>
+    <string name="PARAM_USERNAME" translatable="false">param_username</string>
+    <string name="PARAM_AUTHTOKEN_TYPE" translatable="false">param_authtoken_type</string>
+    <string name="KEY_ACCOUNT_ADD_AUTHENTICATOR" translatable="false">key_account_add_authenticator</string>
+    <string name="PREFS_NAME" translatable="false">hds.aplications.com.mycp.prefs</string>
+    <string name="PREF_USERNAME" translatable="false">username_prefs</string>
+    <string name="PREF_SHORTCUT_ADDED" translatable="false">hds.aplications.com.mycp.shortcut.added</string>
+
+    <string name="VALIDATION_DIGITS_DATE" translatable="false">1234567890/</string>
+
+    <string name="ROOM_TYPE_TRIPLE" translatable="false">Habitación Triple</string>
+    <string name="ROOM_TYPE_DOBLE_2" translatable="false">Habitación doble (Dos camas)</string>
+    <string name="ROOM_TYPE_DOBLE" translatable="false">Habitación doble</string>
+    <string name="ROOM_TYPE_INDIVIDUAL" translatable="false">Habitación individual</string>
+</resources>

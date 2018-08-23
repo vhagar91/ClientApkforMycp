@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                 xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                 xmlns:tools="http://schemas.android.com/tools"
+                                                 android:layout_width="match_parent"
+                                                 android:layout_height="match_parent"
+                                                 android:fitsSystemWindows="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:orientation="vertical"
+            android:background="@color/color_btn_green">
+        </View>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingTop="4dp"
+            android:paddingBottom="6dp"
+            android:textSize="@dimen/text_search_accomodation"
+            android:textStyle="bold"
+            android:textColor="@color/fab_button"
+            android:background="@android:color/white"
+            android:text="BOOKED ACCOMODATIONS"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/card_border"/>
+
+        <ScrollView
+            android:id="@+id/scroll_view_book"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+            <LinearLayout
+                android:id="@+id/content_book_room"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        app:layout_scrollFlags="scroll|enterAlways">
+
+        <!--<LinearLayout-->
+            <!--android:id="@+id/linear_layout_search"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="1dp"-->
+            <!--android:animateLayoutChanges="true"-->
+            <!--android:background="@drawable/shape_back_search"-->
+            <!--android:orientation="vertical"-->
+            <!--app:layout_scrollFlags="scroll|enterAlways">-->
+
+            <!--<TextView-->
+                <!--style="@style/search_accomodation"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:gravity="center"-->
+                <!--android:paddingTop="10dp"-->
+                <!--android:text="@string/search_accomodation_title"-->
+                <!--android:visibility="gone" />-->
+
+            <!--<android.support.v7.widget.AppCompatEditText-->
+                <!--style="@style/edit_text_home"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_margin="10dp"-->
+                <!--android:drawableEnd="@drawable/container_vector_search"-->
+                <!--android:drawableRight="@drawable/container_vector_search"-->
+                <!--android:hint="@string/search"-->
+                <!--android:maxLines="1" />-->
+        <!--</LinearLayout>-->
+
+    </android.support.design.widget.AppBarLayout>
+
+</android.support.design.widget.CoordinatorLayout>

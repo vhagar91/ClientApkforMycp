@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SlidingDrawer android:id="@+id/slidingDrawer"
+               xmlns:android="http://schemas.android.com/apk/res/android"
+               android:layout_width="wrap_content"
+               android:layout_height="70dp"
+               android:gravity="center_horizontal"
+
+               android:handle="@+id/slide_handle"
+               android:content="@+id/slide_contente"
+               android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/slide_handle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/ana_button_slide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="-15dp"
+            android:background="@drawable/selector_slide_orange"
+            android:drawableLeft="@mipmap/ico_sync"
+            android:padding="15dp"
+            style="@style/btn_title_large"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/slide_contente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_btn_orange"
+        android:fontFamily="sans-serif-thin"
+        android:gravity="left|center_vertical"
+        android:text="@string/sync_data_title"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"/>
+</SlidingDrawer>

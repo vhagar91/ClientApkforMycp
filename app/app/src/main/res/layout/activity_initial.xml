@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".view.activities.ActivityNoFilesMap">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignBottom="@+id/ai_relative_layout_btn_grup_mcp"
+        android:layout_marginBottom="61dp">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ai_image_view_mcp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40pt"
+                android:contentDescription="@string/image_log"
+                android:src="@drawable/mcp"/>
+
+            <TextView
+                android:id="@+id/ai_text_view_welcome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ai_image_view_mcp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="1dp"
+                android:text="@string/welcome"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="32dp"/>
+
+            <TextView
+                android:id="@+id/ai_text_view_welcome_a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ai_text_view_welcome"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="@string/welcome_text_l1"
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+            <TextView
+                android:id="@+id/ai_text_view_welcome_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ai_text_view_welcome_a"
+                android:layout_centerHorizontal="true"
+                android:text="@string/welcome_text_l2"
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+            <TextView
+                android:id="@+id/ai_text_view_welcome_c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ai_text_view_welcome_b"
+                android:layout_centerHorizontal="true"
+                android:text="@string/welcome_text_l3"
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/ai_relative_layout_btn_grup_mcp"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom">
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:text="@string/btn_input"
+            android:id="@+id/ai_button_my_home"
+            android:gravity="left|center"
+            android:paddingLeft="20dp"
+            android:background="@drawable/selector_btn_green"
+            android:textColor="#ffffff"
+            android:layout_toRightOf="@+id/ai_button_ico_my_home"
+            android:layout_toEndOf="@+id/ai_button_ico_my_home"
+            android:onClick="actionInitLogin"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:id="@+id/ai_button_ico_my_home"
+            android:background="@drawable/selector_btn_ico_green"
+            android:drawableLeft="@android:drawable/ic_lock_idle_lock"
+            android:paddingLeft="30dp"
+            android:onClick="actionInitLogin"/>
+    </RelativeLayout>
+<!--
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom">
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:text="@string/btn_new_user"
+            android:id="@+id/ai_button_availability"
+            android:gravity="left|center"
+            android:paddingLeft="20dp"
+            android:background="@drawable/selector_btn_blue"
+            android:textColor="#ffffff"
+            android:layout_toRightOf="@+id/ai_button_ico_availability"
+            android:layout_toEndOf="@+id/ai_button_ico_availability"
+            android:onClick="actionNewUser"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:id="@+id/ai_button_ico_availability"
+            android:background="@drawable/selector_btn_ico_blue"
+            android:drawableLeft="@android:drawable/ic_menu_myplaces"
+            android:paddingLeft="25dp"
+            android:onClick="actionNewUser"/>
+    </RelativeLayout>
+-->
+
+</RelativeLayout>
